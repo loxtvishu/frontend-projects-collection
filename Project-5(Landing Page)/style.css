@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    /* background-color: gainsboro; */
+     display: flex;
+}
+ #left-container {
+    height: 100%;
+    width: 40%;
+    /* background-color: yellow; */
+}
+
+#left-container nav {
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    padding: 0px 30px;
+    align-items: center;
+    /* background-color: white; */
+    justify-content: space-between;
+}
+#left-container nav i{
+    font-size: 2vw;
+}
+#left-container nav #lnav {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#left-container nav #rnav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#left-container nav #rnav a {
+    text-decoration: none;
+    font-size: 2vw;
+    color: black;
+    font-weight: 400;
+}
+#left-container #main-part{
+    height: calc(100% - 4vw);
+    /* background-color: rosybrown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main-part #container{
+    /* background-color: aqua; */
+    min-width: 50%;
+}
+#container h1{
+    font-size: 8.8vw;
+}
+#container p{
+    width: 20vw;
+    font-size: 1.4vw;
+    line-height: 1.8vw;
+    margin-top: 2vw;
+    opacity: 0.5;
+    margin-bottom: 1.5vw;
+}
+#container a{
+    font-size: 1.5vw;
+    color: black;
+    opacity: 0.6;
+    font-weight: 600;
+}
+ #right-container {
+    height: 100vh;
+    width: 60%;
+    /* background-color: black; */
+}
+
+ #right-container #top-part {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    /* background-color: tomato; */
+}
+
+ #right-container #top-part #top-left {
+    height: 100%;
+    width: 50%;
+    /* background-color: aqua; */
+}
+
+ #right-container #top-part #top-right {
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(94, 113, 37); */
+}
+
+#top-part .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+ #right-container #bottom-part {
+    height: 50%;
+    width: 100%;
+    /* background-color: rgb(68, 142, 61); */
+}
+
+ #right-container #bottom-part img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 80%;
+}
+@media (max-width:600px) {
+    main{
+        flex-direction: column;
+
+    }
+    #left-container{
+        width: 100vw;
+        margin-bottom: 10px;
+    }
+    #right-container{
+        width: 100vw;
+    }
+    nav{
+        width: 100vw;
+    }
+    #rnav{
+        width: 50vw;
+    }
+    p{
+        font-size: 50vw;
+        line-height: 6.3vw;
+    }
+}
